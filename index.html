@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>One Button Pong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar with instructions, score, leaderboard -->
+        <div class="sidebar">
+            <h1>One Button Pong</h1>
+            <p id="instructions">
+                Press SPACE to start the game.<br>
+                Tap SPACE to switch direction, hold SPACE to stay still!
+            </p>
+            <div id="score">Score: 0</div>
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard"></ul>
+        </div>
+
+        <!-- Game canvas -->
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+    </div>
+
+    <!-- Game Over Overlay -->
+    <div id="gameOverScreen">
+        <h1>You Lost!</h1>
+        <button id="retryBtn">Retry</button>
+    </div>
+
+    <!-- Game logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
